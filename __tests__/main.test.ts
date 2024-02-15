@@ -7,3 +7,16 @@ test('should initialize date', () => {
   expect(date.createdDate).not.toBeNull();
   console.log(date);
 });
+
+test('should create custom date', () => {
+  const date = new DateClass({
+    time: '01:45:00',
+    day: 31,
+    month: 2,
+    year: 2024,
+    weekdayFormat: 'medium',
+    monthFormat: 'long',
+  });
+  expect(date.weekdayFormat).not.toBe('short');
+  console.log(date);
+});

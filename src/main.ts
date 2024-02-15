@@ -24,10 +24,9 @@ export default class DateClass {
     this.id = counter++;
     this.createdDate = today;
     this.time = options.time ?? defaultTime;
-    this.day = today.getDate();
+    this.day = options.day ?? today.getDate();
     this.month = options.month ?? today.getMonth() + 1;
     this.year = options.year ?? today.getFullYear();
-    this.weekday = options.weekday ?? null;
     this.weekdayFormat = options.weekdayFormat ?? 'short';
     this.monthFormat = options.monthFormat ?? 'numerical';
   }

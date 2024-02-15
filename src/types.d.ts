@@ -1,6 +1,6 @@
 export interface DateClassOptions {
   time?: string;
-  weekday?: Weekday;
+  day?: number;
   month?: number;
   year?: number;
   weekdayFormat?: WeekdayFormat;
