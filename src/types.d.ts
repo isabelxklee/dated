@@ -1,3 +1,9 @@
+export interface DateClassOptions {
+  time?: Time;
+  weekday?: Weekday;
+  month?: Month;
+}
+
 export interface Time {
   hour: number;
   minute: number;
@@ -16,5 +22,38 @@ export interface Weekday {
     'Thursday',
     'Friday',
     'Saturday',
+  ];
+}
+
+export interface Month {
+  numerical: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  short: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
+  medium: [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'June',
+    'July',
+    'Aug',
+    'Sept',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
+  long: [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
   ];
 }
