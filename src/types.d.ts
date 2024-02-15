@@ -1,7 +1,8 @@
 export interface DateClassOptions {
   time?: Time;
   weekday?: Weekday;
-  month?: Month;
+  month?: number;
+  year?: number;
 }
 
 export interface Time {

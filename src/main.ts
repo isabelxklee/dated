@@ -1,23 +1,24 @@
-import { DateClassOptions, Month, Time, Weekday } from './types.js';
+import { DateClassOptions, Time, Weekday } from './types.js';
 
 let counter = 0;
+const today = new Date();
 
 export default class DateClass {
   id: number;
   createdDate: Date;
   time: Time;
   day: number;
-  month: Month;
+  month: number;
   year: number;
   weekday: Weekday;
 
   constructor(options: DateClassOptions = {}) {
     this.id = counter++;
-    this.createdDate = new Date();
+    this.createdDate = today;
     this.time = options.time ?? null;
-    this.day = null;
-    this.month = options.month ?? null;
-    this.year = null;
-    this.weekday: options.weekday ?? null;
+    this.day = today.getDate();
+    this.month = options.month ?? today.getMonth() + 1;
+    this.year = options.year ?? today.getFullYear();
+    this.weekday = options.weekday ?? null;
   }
 }
