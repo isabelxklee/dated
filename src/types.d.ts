@@ -1,8 +1,10 @@
 export interface DateClassOptions {
-  time?: Time;
+  time?: string;
   weekday?: Weekday;
   month?: number;
   year?: number;
+  weekdayFormat?: WeekdayFormat;
+  monthFormat?: MonthFormat;
 }
 
 export interface Time {
@@ -11,6 +13,9 @@ export interface Time {
   format: '12hr' | '24hr';
   timezone?: string;
 }
+
+export type WeekdayFormat = 'short' | 'medium' | 'long';
+export type MonthFormat = 'numerical' | 'short' | 'medium' | 'long';
 
 export interface Weekday {
   short: ['S', 'M', 'T', 'W', 'Th', 'F', 'S'];
