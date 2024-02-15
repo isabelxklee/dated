@@ -20,3 +20,10 @@ test('should create custom date', () => {
   expect(date.weekdayFormat).not.toBe('short');
   console.log(date);
 });
+
+test('should update time', () => {
+  const date = new DateClass();
+  date.setTime('15:23:00');
+  expect(date.time).toBe('15:23:00');
+  console.log(date);
+});
