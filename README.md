@@ -1,4 +1,4 @@
-# Dated
+# Dated ⏰🗓️
 A JS date library.
 
 ## Available Scripts
