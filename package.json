@@ -34,7 +34,7 @@
     "test:watch": "jest --watch"
   },
   "author": "Isabel K. Lee <hi@kleetime.com>",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "dependencies": {
     "tslib": "~2.6"
   },
