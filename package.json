@@ -1,7 +1,7 @@
 {
-  "name": "node-typescript-boilerplate",
-  "version": "0.0.0",
-  "description": "Minimalistic boilerplate to quick-start Node.js development in TypeScript.",
+  "name": "dated-js",
+  "version": "0.0.1",
+  "description": "JS date library",
   "type": "module",
   "engines": {
     "node": ">= 20.9 < 21"
@@ -33,7 +33,7 @@
     "prettier": "prettier --config .prettierrc --write .",
     "test:watch": "jest --watch"
   },
-  "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
+  "author": "Isabel K. Lee <hi@kleetime.com>",
   "license": "Apache-2.0",
   "dependencies": {
     "tslib": "~2.6"
