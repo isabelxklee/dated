@@ -1,4 +1,4 @@
-import { DatedOptions, MonthFormat, WeekdayFormat } from './types.js';
+import { DatedOptions, MonthFormat, WeekdayFormat } from '../types.js';
 
 let counter = 0;
 const today = new Date();
@@ -15,11 +15,6 @@ export default class Dated {
   weekday: number;
   weekdayFormat: WeekdayFormat;
   monthFormat: MonthFormat;
-
-  // methods
-  setTime(newTime: string): void {
-    this.time = newTime;
-  }
 
   // setDay!: (newDay: number) => void;
   // setMonth!: (newMonth: number) => void;

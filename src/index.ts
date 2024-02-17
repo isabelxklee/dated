@@ -1,1 +1,1 @@
-export * from './Dated.ts';
+export * from './Dated/index.ts';

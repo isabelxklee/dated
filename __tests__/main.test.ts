@@ -1,4 +1,4 @@
-import Dated from '../src/Dated.ts';
+import Dated from '../src/Dated/index.ts';
 import { updateTime } from '../src/updateTime/index.ts';
 
 jest.autoMockOff();
