@@ -1,11 +1,11 @@
-import { DateClassOptions, MonthFormat, WeekdayFormat } from './types.js';
+import { DatedOptions, MonthFormat, WeekdayFormat } from './types.js';
 
 let counter = 0;
 const today = new Date();
 const defaultTime = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
 // const formatWeekday = null;
 
-export default class DateClass {
+export default class Dated {
   id: number;
   createdDate: Date;
   time: string;
@@ -28,7 +28,7 @@ export default class DateClass {
   // setMonthFormat!: (newFormat: MonthFormat) => void;
 
   // initialize options
-  constructor(options: DateClassOptions = {}) {
+  constructor(options: DatedOptions = {}) {
     this.id = counter++;
     this.createdDate = today;
     this.time = options.time ?? defaultTime;

@@ -1,4 +1,4 @@
-export interface DateClassOptions {
+export interface DatedOptions {
   time?: string;
   day?: number;
   month?: number;

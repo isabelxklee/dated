@@ -1,15 +1,15 @@
-import DateClass from '../src/index.ts';
+import Dated from '../src/Dated.ts';
 
 jest.autoMockOff();
 
 test('should initialize date', () => {
-  const date = new DateClass();
+  const date = new Dated();
   expect(date.createdDate).not.toBeNull();
   console.log(date);
 });
 
 test('should create custom date', () => {
-  const date = new DateClass({
+  const date = new Dated({
     time: '01:45:00',
     day: 31,
     month: 2,
@@ -22,7 +22,7 @@ test('should create custom date', () => {
 });
 
 test('should update time', () => {
-  const date = new DateClass();
+  const date = new Dated();
   date.setTime('15:23:00');
   expect(date.time).toBe('15:23:00');
   console.log(date);
