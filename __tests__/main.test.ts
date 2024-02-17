@@ -1,4 +1,4 @@
-import DateClass from '../src/main.ts';
+import DateClass from '../src/index.ts';
 
 jest.autoMockOff();
 
