@@ -1,6 +1,6 @@
 {
   "name": "dated-js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "JS date library",
   "type": "module",
   "engines": {
@@ -40,5 +40,20 @@
   },
   "volta": {
     "node": "20.10.0"
+  },
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "require": {
+        "types": "./index.d.ts",
+        "default": "./index.js"
+      },
+      "import": {
+        "types": "./index.d.mts",
+        "default": "./index.mjs"
+      }
+    }
   }
 }
